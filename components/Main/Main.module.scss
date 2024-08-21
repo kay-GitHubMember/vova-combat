@@ -1,0 +1,193 @@
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(54, 52, 52);
+    border-radius: 300px 300px 0 0;
+    border-top-style: solid;
+    border-top-width: 11px;
+    border-top-color: gold;
+    box-shadow: 0 -10px 100px rgba(255, 215, 0, 0.7);
+}
+
+.vova_place {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(84, 93, 218);
+    position: relative;
+    left: 40%;
+    top: 22%;
+    border-radius: 100%; 
+    border-width: 25px;
+    border-style: solid;
+    border-color: rgb(32, 39, 145);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.1s ease; 
+}
+
+.vova_place:hover {
+    background-color: rgb(84, 93, 218);
+    border-color: rgb(32, 39, 145);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.vova_place:active {
+    transform: scale(0.9);
+}
+
+.vova_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+    filter: brightness(60%); /* 50% делает изображение вдвое темнее */
+    background-color: rgb(80, 88, 205);;
+}
+
+.coin_place {
+    width: 77px;
+    height: 77px;
+    background-color: rgb(232, 161, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: gold;
+    box-shadow: inset 0 0 20px rgb(179, 134, 23);
+}
+
+.lesha_coin {
+    width: 59px;
+    height: 59px;
+    border-radius: 100%;
+    filter: brightness(33%);
+}
+
+.coins {
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 44%;
+    gap: 1.5rem;
+}
+
+.number_of_coins {
+    font-size: 60px;
+    width: 20rem;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    color: white;
+}
+
+/* Для экранов шириной менее 1107px */
+@media (max-width: 1107px) {
+    .vova_place {
+        width: 220px;
+        height: 220px;
+    }
+
+    .vova_image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1089px) {
+    .vova_place {
+        width: 230px;
+        height: 230px;
+    }
+
+    .vova_image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .coins {
+        padding-left: 43%; 
+    }
+
+    .coin_place {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(232, 161, 9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border-width: 7px;
+        border-style: solid;
+        border-color: gold;
+        box-shadow: inset 0 0 20px rgb(179, 134, 23);
+    }
+
+    .lesha_coin {
+        width: 47px;
+        height: 47px;
+        border-radius: 100%;
+        filter: brightness(33%);
+    }
+}
+
+@media (max-width: 932) {
+    .lesha_coin {
+        width: 35px;
+        height: 35px;
+    }
+
+    .coin_place {
+        width: 43px;
+        height: 43px;
+    }
+
+    .vova_place {
+        width: 195px;
+        height: 195px;
+        position: relative;
+        left: 40%;
+        top: 10%;
+    }
+
+    .vova_image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .coins {
+        position: relative;
+        top: 8%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 44%;
+        gap: 1.5rem;
+    }
+}
+
+/* Для экранов шириной менее 900px */
+@media (max-width: 900px) {
+    .vova_place {
+        width: 200px;
+        height: 200px;
+    }
+
+    .vova_image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Для экранов шириной менее 600px */
+@media (max-width: 600px) {
+    .vova_place {
+        width: 150px;
+        height: 150px;
+    }
+
+    .vova_image {
+        width: 75px;
+        height: 75px;
+    }
+}
